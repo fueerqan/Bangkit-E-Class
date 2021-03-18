@@ -1,12 +1,12 @@
-package com.muhammadfurqan.bangkit_e_class.presentation.adapter.viewholder
+package com.muhammadfurqan.bangkit_e_class.list.presentation.adapter.viewholder
 
 import android.view.View
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.muhammadfurqan.bangkit_e_class.R
-import com.muhammadfurqan.bangkit_e_class.presentation.adapter.NationalHeroAdapter
-import com.muhammadfurqan.bangkit_e_class.presentation.model.NationalHero
+import com.muhammadfurqan.bangkit_e_class.list.presentation.adapter.NationalHeroAdapter
+import com.muhammadfurqan.bangkit_e_class.list.presentation.model.NationalHero
 import de.hdodenhof.circleimageview.CircleImageView
 
 /**

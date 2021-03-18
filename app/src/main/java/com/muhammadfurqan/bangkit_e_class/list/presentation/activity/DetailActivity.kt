@@ -1,10 +1,10 @@
-package com.muhammadfurqan.bangkit_e_class.presentation.activity
+package com.muhammadfurqan.bangkit_e_class.list.presentation.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatTextView
 import com.muhammadfurqan.bangkit_e_class.R
-import com.muhammadfurqan.bangkit_e_class.presentation.model.NationalHero
+import com.muhammadfurqan.bangkit_e_class.list.presentation.model.NationalHero
 
 class DetailActivity : AppCompatActivity() {
 

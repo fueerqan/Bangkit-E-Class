@@ -1,4 +1,4 @@
-package com.muhammadfurqan.bangkit_e_class.presentation.model
+package com.muhammadfurqan.bangkit_e_class.list.presentation.model
 
 import android.os.Parcel
 import android.os.Parcelable

@@ -1,6 +1,6 @@
-package com.muhammadfurqan.bangkit_e_class.data
+package com.muhammadfurqan.bangkit_e_class.list.data
 
-import com.muhammadfurqan.bangkit_e_class.presentation.model.NationalHero
+import com.muhammadfurqan.bangkit_e_class.list.presentation.model.NationalHero
 
 /**
  * @author by furqan on 18/03/2021

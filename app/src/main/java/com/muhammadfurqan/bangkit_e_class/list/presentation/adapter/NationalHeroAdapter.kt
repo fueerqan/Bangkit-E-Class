@@ -1,10 +1,10 @@
-package com.muhammadfurqan.bangkit_e_class.presentation.adapter
+package com.muhammadfurqan.bangkit_e_class.list.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.muhammadfurqan.bangkit_e_class.presentation.adapter.viewholder.NationalHeroViewHolder
-import com.muhammadfurqan.bangkit_e_class.presentation.model.NationalHero
+import com.muhammadfurqan.bangkit_e_class.list.presentation.adapter.viewholder.NationalHeroViewHolder
+import com.muhammadfurqan.bangkit_e_class.list.presentation.model.NationalHero
 
 /**
  * @author by furqan on 18/03/2021
@@ -36,9 +36,9 @@ class NationalHeroAdapter(
     }
 
     fun addData(newHero: ArrayList<NationalHero>) {
-        val lastDataPosition = dataList.size
+        val firstPositionOfNewData = dataList.size
         dataList.addAll(newHero)
-        notifyItemRangeInserted(lastDataPosition, newHero.size)
+        notifyItemRangeInserted(firstPositionOfNewData, newHero.size)
     }
 
     interface Listener {
