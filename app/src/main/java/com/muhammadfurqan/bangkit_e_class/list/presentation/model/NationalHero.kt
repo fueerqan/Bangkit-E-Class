@@ -2,6 +2,8 @@ package com.muhammadfurqan.bangkit_e_class.list.presentation.model
 
 import android.os.Parcel
 import android.os.Parcelable
+import com.muhammadfurqan.bangkit_e_class.answer.Visitable
+import com.muhammadfurqan.bangkit_e_class.answer.adapter.AnswerAdapter
 
 /**
  * @author by furqan on 18/03/2021
@@ -10,7 +12,7 @@ class NationalHero(
     val name: String = "",
     val imageUrl: String = "",
     val description: String = ""
-) : Parcelable {
+) : Visitable(), Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
         parcel.readString() ?: "",
@@ -37,5 +39,8 @@ class NationalHero(
             return arrayOfNulls(size)
         }
     }
+
+    override fun getViewType(): Int =
+        AnswerAdapter.HERO_TYPE
 
 }

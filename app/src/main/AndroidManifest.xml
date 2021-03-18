@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BangkitEClass">
-        <activity android:name=".fragment.FragmentActivity"></activity>
+        <activity
+            android:name=".answer.AnswerActivity"
+            android:label="@string/title_activity_answer" />
+        <activity android:name=".fragment.FragmentActivity" />
         <activity
             android:name=".list.presentation.activity.DetailActivity"
             android:label="@string/title_activity_detail" />

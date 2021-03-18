@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.muhammadfurqan.bangkit_e_class.answer.AnswerActivity
 import com.muhammadfurqan.bangkit_e_class.databinding.ActivityMainBinding
-import com.muhammadfurqan.bangkit_e_class.fragment.FragmentActivity
 import com.muhammadfurqan.bangkit_e_class.list.data.DummyData.HERO_DATA
 import com.muhammadfurqan.bangkit_e_class.list.presentation.adapter.NationalHeroAdapter
 import com.muhammadfurqan.bangkit_e_class.list.presentation.model.NationalHero
@@ -39,7 +39,10 @@ class MainActivity : AppCompatActivity(), NationalHeroAdapter.Listener {
             //            adapter.addData(HERO_DATA)
 
             // navigate to fragment section
-            startActivity(Intent(this, FragmentActivity::class.java))
+//            startActivity(Intent(this, FragmentActivity::class.java))
+
+            // navigate to answer activity
+            startActivity(Intent(this, AnswerActivity::class.java))
         }
 
         setupRecyclerView()
