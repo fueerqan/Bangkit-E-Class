@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.muhammadfurqan.bangkit_e_class.content_provider.ContentProviderActivity
 import com.muhammadfurqan.bangkit_e_class.list.presentation.activity.MainActivity
 import com.muhammadfurqan.bangkit_e_class.shared_pref.SharedPrefActivity
 import com.muhammadfurqan.bangkit_e_class.sqlite.SQLiteActivity
@@ -13,6 +14,7 @@ class BaseActivity : AppCompatActivity() {
     private lateinit var btnGoToList: AppCompatButton
     private lateinit var btnGoToSharedPref: AppCompatButton
     private lateinit var btnGoToSqlite: AppCompatButton
+    private lateinit var btnGoToContentProvider: AppCompatButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +34,11 @@ class BaseActivity : AppCompatActivity() {
         btnGoToSqlite.setOnClickListener {
             goToSqlite()
         }
+
+        btnGoToContentProvider = findViewById(R.id.btn_go_to_content_provider)
+        btnGoToContentProvider.setOnClickListener {
+            goToContentProvider()
+        }
     }
 
     private fun goToList() {
@@ -49,6 +56,12 @@ class BaseActivity : AppCompatActivity() {
     private fun goToSqlite() {
         startActivity(
             Intent(this, SQLiteActivity::class.java)
+        )
+    }
+
+    private fun goToContentProvider() {
+        startActivity(
+            Intent(this, ContentProviderActivity::class.java)
         )
     }
 }

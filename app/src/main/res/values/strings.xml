@@ -11,8 +11,10 @@
     <string name="go_to_list_label">Go To List</string>
     <string name="go_to_sharpref_label">Go To Shared Pref</string>
     <string name="go_to_sqlite_label">Go To SQLite</string>
+    <string name="go_to_content_provider_label">Go To Content Provider</string>
     <string name="hint_email_label">Masukkan Email</string>
     <string name="hint_password_label">Masukkan Password</string>
     <string name="login_label">Login</string>
     <string name="read_data_label">Read Data</string>
+    <string name="read_contacts_label">Read Contacts</string>
 </resources>
