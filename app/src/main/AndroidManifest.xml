@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BangkitEClass">
-        <activity android:name=".shared_pref.SharedPrefActivity"></activity>
+        <activity android:name=".sqlite.SQLiteActivity"></activity>
+        <activity android:name=".shared_pref.SharedPrefActivity" />
         <activity android:name=".BaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
