@@ -8,4 +8,9 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_answer">AnswerActivity</string>
+    <string name="go_to_list_label">Go To List</string>
+    <string name="go_to_sharpref_label">Go To Shared Pref</string>
+    <string name="hint_email_label">Masukkan Email</string>
+    <string name="hint_password_label">Masukkan Password</string>
+    <string name="login_label">Login</string>
 </resources>
